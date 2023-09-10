@@ -12,28 +12,28 @@ function Project3() {
       img: img1,
       title: "Red Sheild",
       price: 55,
-      stock: true
+      stock: true,
     },
     {
       id: 2,
       img: img2,
       title: "Zink",
       price: 37,
-      stock: false
+      stock: false,
     },
     {
       id: 3,
       img: img3,
       title: "Vitamine C",
       price: 42,
-      stock: false
+      stock: false,
     },
     {
       id: 4,
       img: img4,
       title: "Glow Collagen",
       price: 49,
-      stock: false
+      stock: false,
     },
   ]);
   return (
@@ -129,11 +129,6 @@ function Project3() {
                   <Link to="#" className="h5">
                     {idx.title}
                   </Link>
-                  {idx?.stock === false && (
-                  <span>
-                    Out of stock
-                  </span>
-                  )}
                 </div>
                 <div className="card-bottom style-explode">
                   <div className="price">
@@ -145,12 +140,21 @@ function Project3() {
                   <div className="button-place-bid">
                     <Link
                       to=""
-                      onClick={() => window.open(`https://wa.me/971508224920?text=Interested in ${idx?.title}`)}
+                      onClick={() =>
+                        idx?.stock === true ? 
+                        window.open(
+                          `https://wa.me/971508224920?text=Interested in ${idx?.title}`
+                        )
+                        :
+                        null
+                      }
                       data-toggle="modal"
                       data-target="#popup_bid"
                       className="sc-button"
                     >
-                      <span>Buy Now</span>
+                      <span>
+                        {idx?.stock === false ? "Out of stock" : "Buy Now"}
+                      </span>
                     </Link>
                   </div>
                 </div>
