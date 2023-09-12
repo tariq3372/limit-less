@@ -51,12 +51,12 @@ function Project2() {
             <div key={idx.id} className="col-xl-3 col-md-6">
               <div className="project-box">
                 <div className="image">
-                  <Link to="/collection">
+                  <Link to={`/single-product/${idx?.id}`}>
                     <img src={idx.img} alt="LimitLess" />
                   </Link>
                 </div>
                 <div className="content">
-                  <Link to="/collection" className="h5 title">
+                  <Link to={`/single-product/${idx?.id}`} className="h5 title">
                     {idx.title}
                   </Link>
                 </div>

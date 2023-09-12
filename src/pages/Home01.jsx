@@ -16,7 +16,7 @@ function Home01() {
       <About title={"Oral Disintergrating Film"} />
       <About title={"Zink"} />
       <Speciality data={dataBox} />
-      <Footer />
+      <Footer />    
     </div>
   );
 }

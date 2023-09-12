@@ -24,24 +24,20 @@ function Speciality(props) {
           </div>
           {data.map((idx) => (
             <Fragment>
-                {idx?.id === 4 && (
-                <div className="col-xl-2 col-md-6 ">
+              {idx?.id === 4 && <div className="col-xl-2 col-md-6 "></div>}
+              <div key={idx.id} className="col-xl-4 col-md-6 ">
+                <div className="speciality-box">
+                  <div className="icon">
+                    <img src={idx.img} alt="LimitLess" />
+                  </div>
+                  <h5 className="title">{idx.title}</h5>
+                  <p>{idx.desc}</p>
+                  <h3 className="number">0{idx.id}</h3>
                 </div>
-            )}
-                        <div key={idx.id} className="col-xl-4 col-md-6 ">
-              <div className="speciality-box">
-                <div className="icon">
-                  <img src={idx.img} alt="LimitLess" />
-                </div>
-                <h5 className="title">{idx.title}</h5>
-                <p>{idx.desc}</p>
-                <h3 className="number">0{idx.id}</h3>
               </div>
-            </div>
             </Fragment>
           ))}
-          <div className="col-xl-2 col-md-6 ">
-            </div>
+          <div className="col-xl-2 col-md-6 "></div>
         </div>
       </div>
     </section>

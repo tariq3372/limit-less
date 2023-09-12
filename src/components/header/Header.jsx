@@ -7,11 +7,6 @@ import logo from '../../assets/images/logo/logo.png'
 
 import './styles.scss';
 
-
-
-
-
-
 const Header = () => {
 
     const [scroll, setScroll] = useState(false);

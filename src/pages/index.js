@@ -11,6 +11,7 @@ import Nfts from "./Nfts";
 import ParticipantAssets from "./ParticipantAssets";
 import Partners from "./Partners";
 import RoadMap from "./RoadMap";
+import SingleProduct from "./SingleProduct";
 import Team from "./Team";
 import VisionsMission from "./VisionsMission";
 
@@ -18,8 +19,8 @@ const routes = [
   { path: '/', component: <Home01 />},
   { path: '/home-v2', component: <Home02 />},
   { path: '/home-v3', component: <Home03 />},
-
   { path: '/collection', component: <Nfts />},
+  { path: '/single-product/:id', component: <SingleProduct />},
   { path: '/blog', component: <Blog />},
   { path: '/blog-details', component: <BlogDetails />},
   { path: '/visions-mission', component: <VisionsMission />},

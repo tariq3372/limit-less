@@ -5,6 +5,8 @@ import { Route, Routes } from "react-router-dom";
 import routes from "./pages";
 import Page404 from "./pages/404";
 import Header from "./components/header/Header";
+import Home01 from "./pages/Home01";
+import SingleProduct from "./pages/SingleProduct";
 
 function App() {
   useEffect(() => {
@@ -15,15 +17,13 @@ function App() {
 
   return (
     <>
-      <Header />
-
-      <Routes>
-        {routes.map((data, idx) => (
+        <Header />
+        <Routes>
+          {routes.map((data, idx) => (
           <Route key={idx} path={data.path} element={data.component} exact />
         ))}
-
-        <Route path="*" element={<Page404 />} />
-      </Routes>
+          <Route path="*" element={<Page404 />} />
+        </Routes>
     </>
   );
 }

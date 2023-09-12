@@ -1,36 +1,36 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import img1 from "../../assets/images/layouts/2.png";
-import img2 from "../../assets/images/layouts/3.png";
-import img3 from "../../assets/images/layouts/4.png";
-import img4 from "../../assets/images/layouts/5.png";
+import redSheild from "../../assets/images/layouts/red-sheild.jpg";
+import zink from "../../assets/images/layouts/Zfilm.jpg";
+import cflim from "../../assets/images/layouts/Cfilm.jpg";
+import glow from "../../assets/images/layouts/glow.jpg";
 
 function Project3() {
   const [data, setData] = useState([
     {
       id: 1,
-      img: img1,
+      img: redSheild,
       title: "Red Sheild",
       price: 55,
       stock: true,
     },
     {
       id: 2,
-      img: img2,
+      img: zink,
       title: "Zink",
       price: 37,
       stock: false,
     },
     {
       id: 3,
-      img: img3,
+      img: cflim,
       title: "Vitamine C",
       price: 42,
       stock: false,
     },
     {
       id: 4,
-      img: img4,
+      img: glow,
       title: "Glow Collagen",
       price: 49,
       stock: false,
@@ -121,12 +121,12 @@ function Project3() {
             <div key={idx.id} className="col-xl-3 col-md-6">
               <div className="nft-item">
                 <div className="card-media">
-                  <Link to="#">
+                  <Link to={`/single-product/${idx?.id}`}>
                     <img src={idx.img} alt="LimitLess" />
                   </Link>
                 </div>
                 <div className="card-title d-flex justify-content-between">
-                  <Link to="#" className="h5">
+                  <Link to={`/single-product/${idx?.id}`} className="h5">
                     {idx.title}
                   </Link>
                 </div>
