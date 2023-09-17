@@ -718,7 +718,7 @@ const SingleProduct = () => {
                           WebkitTextFillColor: "transparent",
                         }}
                       >
-                        SAR 271
+                        SAR 226
                       </span>
                       <span
                         style={{
@@ -730,7 +730,7 @@ const SingleProduct = () => {
                           marginLeft: "10px",
                         }}
                       >
-                        SAR 226
+                        SAR 271
                       </span>
                     </h4>
                     <p className="mt-2 fs-17" style={{ background: "#ffebe8", color:"#fc3e3e", fontWeight: "600", width: "fit-content", padding: "5px", borderRadius: "6px" }}>Out of stock</p>

@@ -40,7 +40,7 @@ function Project3() {
       id: 5,
       img: limitless,
       title: "LimitLess",
-      price: 271,
+      price: 226,
       stock: false,
     },
   ]);
