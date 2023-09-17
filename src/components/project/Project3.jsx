@@ -4,6 +4,7 @@ import redSheild from "../../assets/images/layouts/red-sheild.jpg";
 import zink from "../../assets/images/layouts/Zfilm.jpg";
 import cflim from "../../assets/images/layouts/Cfilm.jpg";
 import glow from "../../assets/images/layouts/glow.jpg";
+import limitless from "../../assets/images/layouts/limtlessss.jpg";
 
 function Project3() {
   const [data, setData] = useState([
@@ -33,6 +34,13 @@ function Project3() {
       img: glow,
       title: "Glow Collagen",
       price: 49,
+      stock: false,
+    },
+    {
+      id: 5,
+      img: limitless,
+      title: "LimitLess",
+      price: 72,
       stock: false,
     },
   ]);
