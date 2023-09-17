@@ -1,15 +1,34 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Footer from "../components/footer/Footer";
 import { Link, useParams } from "react-router-dom";
 import redSheild from "../assets/images/layouts/red-sheild.jpg";
 import zink from "../assets/images/layouts/Zfilm.jpg";
 import cflim from "../assets/images/layouts/Cfilm.jpg";
 import glow from "../assets/images/layouts/glow.jpg";
-import limitless from "../assets/images/layouts/limtlessss.jpg"
+import limitless from "../assets/images/layouts/limtlessss.jpg";
 
 const SingleProduct = () => {
   const [quantity, setQuantity] = useState(1);
   const { id } = useParams();
+  const [activeImage, setActiveImage] = useState(
+    id == 1
+      ? redSheild
+      : id == 2
+      ? zink
+      : id == 3
+      ? cflim
+      : id == 4
+      ? glow
+      : limitless
+  );
+  const [width, setWidth] = useState(window.innerWidth);
+  useEffect(() => {
+    function handleResize() {
+      setWidth(window.innerWidth);
+    }
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, [width]);
   return (
     <div className="wrapper">
       <section className="nft">
@@ -43,7 +62,7 @@ const SingleProduct = () => {
                           WebkitTextFillColor: "transparent",
                         }}
                       >
-                        $55.00
+                        SAR 207
                       </span>
                       <span
                         style={{
@@ -55,7 +74,7 @@ const SingleProduct = () => {
                           marginLeft: "10px",
                         }}
                       >
-                        $85.00
+                        SAR 319
                       </span>
                     </h4>
                     <p className="mt-2 fs-17">In stock</p>
@@ -186,7 +205,7 @@ const SingleProduct = () => {
                           WebkitTextFillColor: "transparent",
                         }}
                       >
-                        $37.00
+                        SAR 139
                       </span>
                       <span
                         style={{
@@ -198,10 +217,10 @@ const SingleProduct = () => {
                           marginLeft: "10px",
                         }}
                       >
-                        $57.00
+                        SAR 214
                       </span>
                     </h4>
-                    <p className="mt-2 fs-17">Out of stock</p>
+                    <p className="mt-2 fs-17" style={{ background: "#ffebe8", color:"#fc3e3e", fontWeight: "600", width: "fit-content", padding: "5px", borderRadius: "6px" }}>Out of stock</p>
                     <p className="mt-4 fs-17">
                       Our Zinc supplement reflects our commitment to quality,
                       purity, and potency. Trust Zinc from Limitless Health and
@@ -327,7 +346,7 @@ const SingleProduct = () => {
                           WebkitTextFillColor: "transparent",
                         }}
                       >
-                        $42.00
+                        SAR 158
                       </span>
                       <span
                         style={{
@@ -339,10 +358,10 @@ const SingleProduct = () => {
                           marginLeft: "10px",
                         }}
                       >
-                        $61.00
+                        SAR 229
                       </span>
                     </h4>
-                    <p className="mt-2 fs-17">Out of stock</p>
+                    <p className="mt-2 fs-17" style={{ background: "#ffebe8", color:"#fc3e3e", fontWeight: "600", width: "fit-content", padding: "5px", borderRadius: "6px" }}>Out of stock</p>
                     <p className="mt-4 fs-17">
                       Vitamin C, an essential nutrient, is renowned for its
                       potent antioxidant properties, aiding in immune support
@@ -470,7 +489,7 @@ const SingleProduct = () => {
                           WebkitTextFillColor: "transparent",
                         }}
                       >
-                        $49.00
+                        SAR 184
                       </span>
                       <span
                         style={{
@@ -482,10 +501,10 @@ const SingleProduct = () => {
                           marginLeft: "10px",
                         }}
                       >
-                        $63.00
+                        SAR 237
                       </span>
                     </h4>
-                    <p className="mt-2 fs-17">Out of stock</p>
+                    <p className="mt-2 fs-17" style={{ background: "#ffebe8", color:"#fc3e3e", fontWeight: "600", width: "fit-content", padding: "5px", borderRadius: "6px" }}>Out of stock</p>
                     <p className="mt-4 fs-17">
                       Glow Collagen is a premium skincare supplement designed to
                       enhance your natural radiance. Packed with essential
@@ -586,7 +605,9 @@ const SingleProduct = () => {
           ) : id == 5 ? (
             <div className="row">
               <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                <div style={{ width: "100%", height: "100%" }}>
+                <div
+                  style={{ width: "100%", height: "100%", maxHeight: "600px" }}
+                >
                   <img
                     style={{
                       width: "100%",
@@ -594,11 +615,96 @@ const SingleProduct = () => {
                       borderRadius: "30px",
                       boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
                     }}
-                    src={limitless}
+                    src={activeImage}
                   />
                 </div>
+                {/* <div className="row pt-4">
+                  <div className="col-xl-3 col-lg-3 col-md-3 col-3">
+                    <div
+                      style={{ width: "100%", height: "100%" }}
+                      onClick={() => setActiveImage(limitless)}
+                    >
+                      <img
+                        style={{
+                          width: "100%",
+                          height: "100%",
+                          borderRadius: "10px",
+                          cursor: "pointer",
+                          boxShadow:
+                            activeImage == limitless
+                              ? "rgba(0, 88, 198) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 88, 198) 0px -3px 0px inset"
+                              : "rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset",
+                        }}
+                        src={limitless}
+                      />
+                    </div>
+                  </div>
+                  <div className="col-xl-3 col-lg-3 col-md-3 col-3">
+                    <div
+                      style={{ width: "100%", height: "100%" }}
+                      onClick={() => setActiveImage(redSheild)}
+                    >
+                      <img
+                        style={{
+                          width: "100%",
+                          height: "100%",
+                          borderRadius: "10px",
+                          cursor: "pointer",
+                          boxShadow:
+                            activeImage == redSheild
+                              ? "rgba(0, 88, 198) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 88, 198) 0px -3px 0px inset"
+                              : "rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset",
+                        }}
+                        src={redSheild}
+                      />
+                    </div>
+                  </div>
+                  <div className="col-xl-3 col-lg-3 col-md-3 col-3">
+                    <div
+                      style={{ width: "100%", height: "100%" }}
+                      onClick={() => setActiveImage(zink)}
+                    >
+                      <img
+                        style={{
+                          width: "100%",
+                          height: "100%",
+                          borderRadius: "10px",
+                          cursor: "pointer",
+                          boxShadow:
+                            activeImage == zink
+                              ? "rgba(0, 88, 198) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 88, 198) 0px -3px 0px inset"
+                              : "rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset",
+                        }}
+                        src={zink}
+                      />
+                    </div>
+                  </div>
+                  <div className="col-xl-3 col-lg-3 col-md-3 col-3">
+                    <div
+                      style={{ width: "100%", height: "100%" }}
+                      onClick={() => setActiveImage(glow)}
+                    >
+                      <img
+                        style={{
+                          width: "100%",
+                          height: "100%",
+                          cursor: "pointer",
+                          borderRadius: "10px",
+                          boxShadow:
+                            activeImage == glow
+                              ? "rgba(0, 88, 198) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 88, 198) 0px -3px 0px inset"
+                              : "rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset",
+                        }}
+                        src={glow}
+                      />
+                    </div>
+                  </div>
+                </div> */}
               </div>
-              <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 pt-5 pt-sm-0">
+              <div
+                className="col-xl-6 col-lg-6 col-md-6 col-sm-12 pt-5 pt-sm-0"
+                // style={{ marginTop: width < 766 && "5rem" }}
+              >
                 <div style={{ width: "100%" }}>
                   <h3 className="heading">LimitLess</h3>
                   <hr />
@@ -612,7 +718,7 @@ const SingleProduct = () => {
                           WebkitTextFillColor: "transparent",
                         }}
                       >
-                        $72.00
+                        SAR 271
                       </span>
                       <span
                         style={{
@@ -624,12 +730,19 @@ const SingleProduct = () => {
                           marginLeft: "10px",
                         }}
                       >
-                        $60.00
+                        SAR 226
                       </span>
                     </h4>
-                    <p className="mt-2 fs-17">Out of stock</p>
+                    <p className="mt-2 fs-17" style={{ background: "#ffebe8", color:"#fc3e3e", fontWeight: "600", width: "fit-content", padding: "5px", borderRadius: "6px" }}>Out of stock</p>
                     <p className="mt-4 fs-17">
-                    Limitless Erectile Dysfunction delivers a transformative solution for enhanced sexual performance. Expect a more robust and enduring erection, igniting your desire and self-assurance. Bid farewell to restrictions with our daily-use formula, which extends your sexual stamina. Unlock newfound intimacy and relationships with ease, thanks to Limitless Erectile Dysfunction's remarkable benefits.
+                      Limitless Erectile Dysfunction delivers a transformative
+                      solution for enhanced sexual performance. Expect a more
+                      robust and enduring erection, igniting your desire and
+                      self-assurance. Bid farewell to restrictions with our
+                      daily-use formula, which extends your sexual stamina.
+                      Unlock newfound intimacy and relationships with ease,
+                      thanks to Limitless Erectile Dysfunction's remarkable
+                      benefits.
                     </p>
                     <hr />
                     <div className="mt-4 d-flex gap-5">
@@ -725,6 +838,7 @@ const SingleProduct = () => {
           ) : null}
         </div>
       </section>
+      <div className="mb-58" />
       <Footer />
     </div>
   );

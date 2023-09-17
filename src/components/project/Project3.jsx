@@ -12,35 +12,35 @@ function Project3() {
       id: 1,
       img: redSheild,
       title: "Red Sheild",
-      price: 55,
+      price: 207,
       stock: true,
     },
     {
       id: 2,
       img: zink,
       title: "Zink",
-      price: 37,
+      price: 139,
       stock: false,
     },
     {
       id: 3,
       img: cflim,
       title: "Vitamine C",
-      price: 42,
+      price: 158,
       stock: false,
     },
     {
       id: 4,
       img: glow,
       title: "Glow Collagen",
-      price: 49,
+      price: 184,
       stock: false,
     },
     {
       id: 5,
       img: limitless,
       title: "LimitLess",
-      price: 72,
+      price: 271,
       stock: false,
     },
   ]);
@@ -142,19 +142,18 @@ function Project3() {
                   <div className="price">
                     <div className="price-details">
                       <span>Price</span>
-                      <h6>{idx.price} Dollar</h6>
+                      <h6>{idx.price} SAR</h6>
                     </div>
                   </div>
                   <div className="button-place-bid">
                     <Link
                       to=""
                       onClick={() =>
-                        idx?.stock === true ? 
-                        window.open(
-                          `https://wa.me/971508224920?text=Interested in ${idx?.title}`
-                        )
-                        :
-                        null
+                        idx?.stock === true
+                          ? window.open(
+                              `https://wa.me/971508224920?text=Interested in ${idx?.title}`
+                            )
+                          : null
                       }
                       data-toggle="modal"
                       data-target="#popup_bid"
