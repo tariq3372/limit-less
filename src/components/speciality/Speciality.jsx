@@ -6,7 +6,7 @@ function Speciality(props) {
   const [dataBlock] = useState({
     subheading: "Our Speciality",
     heading: "Complete Solutions for your Wellness",
-    desc: "Cyfonii is the premier marketplace for nifties, which are digital items you can truly own for yourself",
+    desc: "limitless is the premier marketplace for nifties, which are digital items you can truly own for yourself",
   });
   return (
     <section className="speciality">

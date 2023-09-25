@@ -14,7 +14,7 @@ function Roadmap(props) {
     const [dataBlock] = useState(
         {
             subheading: 'Road Map',
-            heading: 'The Journey of Cyfonii NFT',
+            heading: 'The Journey of limitless NFT',
         }
     )
 

@@ -34,7 +34,7 @@ function Blog(props) {
                                 <div className="blog-box">
                                     <div className="image">
                                         <Link to="/blog-details">
-                                            <img src={idx.img} alt="Cyfonii" />
+                                            <img src={idx.img} alt="limitless" />
                                         </Link>
                                     </div>
                                     <div className="content center">

@@ -49,13 +49,13 @@ function Testimonials2(props) {
                                 <SwiperSlide key={idx.id}>
                                     <div className="box-testimonial center">
                                             <div className="image">
-                                                <img src={idx.avt} alt="Cyfonii" />
+                                                <img src={idx.avt} alt="limitless" />
                                             </div>
                                             
                                             <div className="info">
                                                 <h5 className="name">{idx.name}</h5>
                                                 <p>{idx.position}</p>
-                                                <img src={idx.icon} alt="Cyfonii" />
+                                                <img src={idx.icon} alt="limitless" />
                                             </div>
                                             <p className="text">{idx.text}</p>
                                         </div>

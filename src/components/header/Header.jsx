@@ -40,11 +40,11 @@ const Header = () => {
                         <div className="header__body">
                             <div className="header__logo">
                                 <Link to="/">
-                                    <img id="site-logo" src={logo} alt='cyfonii' />
+                                    <img id="site-logo" src={logo} alt='limitless' />
                                 </Link>
                             </div>
 
-                            <div className="header__right">
+                            {/* <div className="header__right">
                             <nav id="main-nav" className={`main-nav ${menuActive ? 'active' : ''}`}>
                                     <ul id="menu-primary-menu" className="menu">
                                         {
@@ -70,7 +70,7 @@ const Header = () => {
                                     </ul>
                                 </nav>
                                 <div className={`mobile-button ${menuActive ? 'active' : ''}`} onClick={handleMenuActive}><span></span></div>
-                            </div>
+                            </div> */}
 
                             <div className="header__action">
                                 {/* <Link to="#" className="search-btn">
@@ -79,7 +79,7 @@ const Header = () => {
                                         <path d="M16.0176 16.4849L19.5416 19.9997" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                                     </svg>                                    
                                 </Link> */}
-                                <Link  className="action-btn"><span>Join Now</span></Link>
+                                {/* <Link  className="action-btn"><span>Join Now</span></Link> */}
                             </div>
                         </div>
                     </div>

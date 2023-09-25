@@ -19,7 +19,7 @@ function About3(props) {
         {
             subheading: 'About us',
             heading: 'Hight Quality NFT Collections',
-            desc1: 'Cyfonii is the premier marketplace for nifties, which are digital items you can truly own for yourself' ,
+            desc1: 'limitless is the premier marketplace for nifties, which are digital items you can truly own for yourself' ,
             desc2: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occae cat cupidatat non proident, sunt in culpa qui officia dese runt mollit anim id est laborum velit esse cillum dolore eu fugiat nulla pariatu epteur sint occaecat'
             
         }
@@ -76,11 +76,11 @@ function About3(props) {
                                         </div>
                                         <div className="content">
                                             <div className="image">
-                                                <img src={idx.img} alt="Cyfonii" />
+                                                <img src={idx.img} alt="limitless" />
                                             </div>
 
                                             <div className="info d-flex">
-                                                <img src={idx.avt} alt="Cyfonii" />
+                                                <img src={idx.avt} alt="limitless" />
 
                                                 <div >
                                                     <h6 className="name">{idx.name}</h6>

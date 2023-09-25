@@ -23,7 +23,7 @@ function Banner2(props) {
   const [dataBlock] = useState({
     subheading: "We are Monteno NFT",
     heading: "Most Popular Collections",
-    desc: "Cyfonii is the premier marketplace for nifties, which are digital items you can truly own for yourself",
+    desc: "limitless is the premier marketplace for nifties, which are digital items you can truly own for yourself",
   });
   return (
     <section className="banner s2">
@@ -84,11 +84,11 @@ function Banner2(props) {
                     </div>
                     <div className="content">
                       <div className="image">
-                        <img src={idx.img} alt="Cyfonii" />
+                        <img src={idx.img} alt="limitless" />
                       </div>
 
                       <div className="info d-flex">
-                        <img src={idx.avt} alt="Cyfonii" />
+                        <img src={idx.avt} alt="limitless" />
 
                         <div>
                           <h6 className="name">{idx.name}</h6>

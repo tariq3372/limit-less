@@ -57,7 +57,7 @@ function BlogDetails(props) {
                                     <div className="main">
                                         <p className="boild">The non-fungible tokens (NFTs) owners have zero intellectual property ownership of their content and only one NFT collection in the top 25 platforms by market capitalisation has attempted to confer intellectual property rights to the purchasers of digital arts, says a report.</p>
                                         <div className="image">
-                                            <img src={img1} alt="cyfonii" />
+                                            <img src={img1} alt="limitless" />
                                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                                         </div>
                                         <p className="mb-15">Most NFT operators "appear to have misled NFT purchasers" about the extent of their rights.</p>
@@ -77,7 +77,7 @@ function BlogDetails(props) {
                                             <ul className="list-tag">
                                                 <li><Link to="/blog-details">nfts</Link></li>
                                                 <li><Link to="/blog-details">crypto</Link></li>
-                                                <li><Link to="/blog-details">cyfonii</Link></li>
+                                                <li><Link to="/blog-details">limitless</Link></li>
                                                 <li><Link to="/blog-details">collection</Link></li>
                                             </ul>
                                         </div>
@@ -128,7 +128,7 @@ function BlogDetails(props) {
 
                                         <div className="comment-box s1">
                                             <div className="avt">
-                                                <img src={avt1} alt="cyfonii" />
+                                                <img src={avt1} alt="limitless" />
                                             </div>
                                             <div className="info">
                                                 <h6 className="name">Annette Black</h6>
@@ -139,7 +139,7 @@ function BlogDetails(props) {
                                         </div>
                                         <div className="comment-box rep" >
                                             <div className="avt">
-                                                <img src={avt2} alt="cyfonii" />
+                                                <img src={avt2} alt="limitless" />
                                             </div>
                                             <div className="info">
                                                 <h6 className="name">Darlene Robertson</h6>
@@ -150,7 +150,7 @@ function BlogDetails(props) {
                                         </div>
                                         <div className="comment-box">
                                             <div className="avt">
-                                                <img src={avt3} alt="cyfonii" />
+                                                <img src={avt3} alt="limitless" />
                                             </div>
                                             <div className="info">
                                                 <h6 className="name">Ronald Richards</h6>
@@ -161,7 +161,7 @@ function BlogDetails(props) {
                                         </div>
                                         <div className="comment-box">
                                             <div className="avt">
-                                                <img src={avt4} alt="cyfonii" />
+                                                <img src={avt4} alt="limitless" />
                                             </div>
                                             <div className="info">
                                                 <h6 className="name">Theresa Webb</h6>

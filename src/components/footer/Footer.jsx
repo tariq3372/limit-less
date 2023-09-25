@@ -32,7 +32,7 @@ function Footer() {
       <div className="container">
         <div className="row">
           <div className="col-md-12">
-            <div className="footer__main">
+            {/* <div className="footer__main">
               <div className="block-text center">
                 <h3 className="heading">{dataBlock.heading}</h3>
                 <p>{dataBlock.desc}</p>
@@ -49,7 +49,7 @@ function Footer() {
                   <span>Subscribe</span>
                 </button>
               </form>
-            </div>
+            </div> */}
 
             <div className="footer__bottom">
               <Link to="/" className="logo">
@@ -57,7 +57,7 @@ function Footer() {
               </Link>
 
               <div className="center mb--30">
-                <ul className="list">
+                {/* <ul className="list">
                   <li>
                     <Link to="/">Home</Link>
                   </li>
@@ -76,8 +76,8 @@ function Footer() {
                   <li>
                     <Link to="/contact">Contact</Link>
                   </li>
-                </ul>
-                <p>Copyright © 2023, LimitLess. Designed by MVP</p>
+                </ul> */}
+                <p style={{ margin: 0 }}>Copyright © 2023, LimitLess. Designed by MVP</p>
               </div>
               <ul className="list-social">
                 <li>

@@ -115,7 +115,7 @@ function Counter(props) {
                                         </div>
 
                                         <div className="image">
-                                            <img src={img} alt="Cyfonii" />
+                                            <img src={img} alt="limitless" />
                                         </div>
                                     </div>
                                 </div>

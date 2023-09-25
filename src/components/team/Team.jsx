@@ -61,7 +61,7 @@ function Team(props) {
                                                 <div className="team-box">
                                                     <div className="image">
                                                         <Link to="/team">
-                                                            <img src={idx.img} alt="Cyfonii" />
+                                                            <img src={idx.img} alt="limitless" />
                                                         </Link>
                                                     </div>
                                                     <div className="content">

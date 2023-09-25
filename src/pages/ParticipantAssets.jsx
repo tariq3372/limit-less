@@ -47,7 +47,7 @@ function ParticipantAssets(props) {
                                 <div key={idx.id} className="col-md-4">
                                     <div className="blog-box">
                                         <div className="image">
-                                            <Link to="#"><img src={idx.img} alt="Cyfonii" /></Link>
+                                            <Link to="#"><img src={idx.img} alt="limitless" /></Link>
                                         </div>
 
                                     </div>

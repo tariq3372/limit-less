@@ -40,7 +40,7 @@ function About(props) {
                                     <Button title='Join Now' link='/contact' />
                                 
                                 </div>
-                                <img src={img} alt="Cyfonii" />
+                                <img src={img} alt="limitless" />
                             </div>
                         </div>
                     </div>

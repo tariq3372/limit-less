@@ -58,7 +58,7 @@ function Contact(props) {
                                     </ul>
 
                                     <div className="image">
-                                        <img src={img} alt="cyfonii" />
+                                        <img src={img} alt="limitless" />
                                     </div>
                                 </div>
 

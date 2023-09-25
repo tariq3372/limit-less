@@ -38,7 +38,7 @@ function Partner(props) {
                                 {
                                     data.map(idx => (
                                         <SwiperSlide key={idx.id} >
-                                            <Link to="#"><img src={idx.img} alt="Cyfonii" /></Link>
+                                            <Link to="#"><img src={idx.img} alt="limitless" /></Link>
                                         </SwiperSlide>
                                     ))
                                 }

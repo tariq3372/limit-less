@@ -33,7 +33,7 @@ function AdvisorsBackers(props) {
                                 <div key={idx.id} className="col-xl-3 col-md-6">
                                     <div className="team-box">
                                         <div className="image">
-                                            <Link to="/team"><img src={idx.img} alt="Cyfonii" /></Link>
+                                            <Link to="/team"><img src={idx.img} alt="limitless" /></Link>
 
                                             <ul className="list-social">
                                                 <li><Link to="#">

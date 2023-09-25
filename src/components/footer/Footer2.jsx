@@ -13,7 +13,7 @@ function Footer2(props) {
                                 <div className="footer__main">
 
                                     <div className="info-left">
-                                        <Link to="/" className="logo"><img src={logo} alt="Cyfonii" /></Link>
+                                        <Link to="/" className="logo"><img src={logo} alt="limitless" /></Link>
                                         <ul className="list-social">
                                             <li><Link to="#">
                                                 <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -77,7 +77,7 @@ function Footer2(props) {
                                         </div>
 
                                         <div className="bottom">
-                                            <p>Copyright © 2022, Cyfonii. Designed by Themesflat</p>
+                                            <p>Copyright © 2022, limitless. Designed by Themesflat</p>
                                             <ul className="list">
                                                 <li><Link to="#">Terms & Condition</Link></li>
                                                 <li><Link to="#">Privacy Policy</Link></li>

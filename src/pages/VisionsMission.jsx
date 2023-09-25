@@ -55,12 +55,12 @@ function VisionsMission(props) {
                             <div className="block-text">
                                 <h6 className="sub-heading"><span>Visions & Mission</span></h6>
                                 <h3 className="heading wow" data-splitting>Our Vision</h3>
-                                    <p className="mb-17">Cyfonii aims to build a virtual reality environment, a real metaverse for business activities, where all users can easily bring their business activities to the network environment, conduct the comprehensive digital transformation of business operations, increase outstanding efficiency with the maximum support of technologies.</p>
+                                    <p className="mb-17">limitless aims to build a virtual reality environment, a real metaverse for business activities, where all users can easily bring their business activities to the network environment, conduct the comprehensive digital transformation of business operations, increase outstanding efficiency with the maximum support of technologies.</p>
                             </div>
                             <div className="block-text">
                                 <h6 className="sub-heading"><span>Visions & Mission</span></h6>
                                 <h3 className="heading wow" data-splitting>Our Mission</h3>
-                                    <p>Cyfonii is conceptualized almost like the development of the digital society and digital economy of the world according to the comprehensive digital transformation model (Digital Transformation) in the period of Industry 4.0 taking place very strongly all over the world starting from the digitization period (Digitization) to the goal of building a virtual super universe (Metaverse) is being shaped.</p>
+                                    <p>limitless is conceptualized almost like the development of the digital society and digital economy of the world according to the comprehensive digital transformation model (Digital Transformation) in the period of Industry 4.0 taking place very strongly all over the world starting from the digitization period (Digitization) to the goal of building a virtual super universe (Metaverse) is being shaped.</p>
                             </div>
                         </div>
                         <div className="col-xl-6 col-md-12">
@@ -68,7 +68,7 @@ function VisionsMission(props) {
                                 <div className="images">
                                     {
                                         dataImg.map(idx => (
-                                            <img key={idx.id} className={idx.class} src={idx.img} alt="cyfonii" />
+                                            <img key={idx.id} className={idx.class} src={idx.img} alt="limitless" />
                                         ))
                                     }
                                 </div>

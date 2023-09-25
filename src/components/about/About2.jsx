@@ -13,7 +13,7 @@ function About2(props) {
             subheading: 'About us',
             heading: 'Hight Quality NFT Collections',
 
-            desc1: 'Cyfonii is the premier marketplace for nifties, which are digital items you can truly own for yourself',
+            desc1: 'limitless is the premier marketplace for nifties, which are digital items you can truly own for yourself',
             desc2: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occae cat cupidatat non proident, sunt in culpa qui officia dese runt mollit anim id est laborum velit esse cillum dolore eu fugiat nulla pariatu epteur sint occaecat',
            
         }
@@ -32,7 +32,7 @@ function About2(props) {
                                 </div>
 
                                 <div className="about__main center" data-aos="fade-up" data-aos-duration="3000">
-                                    <img src={img} alt="Cyfonii" />
+                                    <img src={img} alt="limitless" />
                                     <p className="mb-17">{dataBlock.desc1}</p>
                                     <p className="mb-30">{dataBlock.desc2}</p>
                                     <Button title='More About Us' link='/about' />

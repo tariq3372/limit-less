@@ -54,7 +54,7 @@ function Partners(props) {
                                 {
                                     data.slice(0,6).map(idx => (
                                         <SwiperSlide key={idx.id}>
-                                            <a href="#"><img src={idx.img} alt="cyfonii" /></a>
+                                            <a href="#"><img src={idx.img} alt="limitless" /></a>
                                         </SwiperSlide>
                                     ))
                                 }
@@ -81,7 +81,7 @@ function Partners(props) {
                                 {
                                     data.slice(0,6).map(idx => (
                                         <SwiperSlide key={idx.id}>
-                                            <a href="#"><img src={idx.img} alt="cyfonii" /></a>
+                                            <a href="#"><img src={idx.img} alt="limitless" /></a>
                                         </SwiperSlide>
                                     ))
                                 }
@@ -108,7 +108,7 @@ function Partners(props) {
                                 {
                                     data.slice(0,6).map(idx => (
                                         <SwiperSlide key={idx.id}>
-                                            <a href="#"><img src={idx.img} alt="cyfonii" /></a>
+                                            <a href="#"><img src={idx.img} alt="limitless" /></a>
                                         </SwiperSlide>
                                     ))
                                 }
@@ -135,7 +135,7 @@ function Partners(props) {
                                 {
                                     data.slice(0,6).map(idx => (
                                         <SwiperSlide key={idx.id}>
-                                            <a href="#"><img src={idx.img} alt="cyfonii" /></a>
+                                            <a href="#"><img src={idx.img} alt="limitless" /></a>
                                         </SwiperSlide>
                                     ))
                                 }

@@ -14,7 +14,7 @@ function Portfolio(props) {
     const [dataBlock] = useState(
         {
             subheading: 'Join NFT Portfolio',
-            heading: 'Become a Cyfonii Player Now',
+            heading: 'Become a limitless Player Now',
             
         }
     )

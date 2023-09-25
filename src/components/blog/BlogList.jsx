@@ -21,7 +21,7 @@ function BlogList(props) {
                                         <div key={idx.id} className="blog-box-2">
                                             <div className="image">
                                                 <Link to="/blog-details">
-                                                    <img src={idx.img} alt="cyfonii" />
+                                                    <img src={idx.img} alt="limitless" />
                                                 </Link>
                                             </div>
 

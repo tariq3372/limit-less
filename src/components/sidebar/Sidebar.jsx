@@ -110,7 +110,7 @@ function Sidebar(props) {
                     {
                         data.map(idx => (
                             <li key={idx.id}>
-                                <div className="image"><Link to="#"><img src={idx.img} alt="cyfonii" /></Link></div>
+                                <div className="image"><Link to="#"><img src={idx.img} alt="limitless" /></Link></div>
 
                                 <div className="content">
                                     <div className="meta ">
@@ -130,7 +130,7 @@ function Sidebar(props) {
             </div>
 
             <div className="widget-sidebar widget-join">
-                <img src={logosm} alt="cyfonii" />
+                <img src={logosm} alt="limitless" />
 
                 <h5>Buy, Create and Sell NFTs Files</h5>
 

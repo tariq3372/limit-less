@@ -93,7 +93,7 @@ function Faq3(props) {
                 <div className="col-xl-6 col-md-12">
 
                     <div className="image" data-aos="fade-left" data-aos-duration="2000">
-                        <img src={img} alt="Cyfonii" />
+                        <img src={img} alt="limitless" />
                     </div>
 
                 </div>

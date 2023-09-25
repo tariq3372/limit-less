@@ -55,7 +55,7 @@ function HelpCenter(props) {
 
                                     <h5>Watch video</h5>
 
-                                    <img src={img} alt="Cyfonii" />
+                                    <img src={img} alt="limitless" />
                                 </div>
                             </div>
                         </div>

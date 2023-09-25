@@ -12,9 +12,9 @@ function Home01() {
     <div className="home-1 wrapper">
       <Banner />
       <About title={"Red Sheild"} />
-      <Project2 data={dataItem} />
-      <About title={"Oral Disintergrating Film"} />
-      <About title={"Zink"} />
+      {/* <Project2 data={dataItem} /> */}
+      {/* <About title={"Oral Disintergrating Film"} />
+      <About title={"Zink"} /> */}
       <Speciality data={dataBox} />
       <Footer />    
     </div>

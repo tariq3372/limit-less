@@ -22,7 +22,7 @@ function Banner3(props) {
                                 Collect Digital Art
                                 and <span className="arlo_tm_animation_text_word"></span>
                                 </h2>
-                            <p className="desc">Cyfonii is the premier marketplace for nifties, which are digital items you can truly own for yourself</p>
+                            <p className="desc">limitless is the premier marketplace for nifties, which are digital items you can truly own for yourself</p>
 
                             <Link to="/contact" className="action-btn"><span>Explore Now</span></Link>
                             <Link to="/contact" className="action-btn s1"><span>Create NFT’s</span></Link>
@@ -48,7 +48,7 @@ function Banner3(props) {
 
                     <div className="banner__right">
                         <div className="image-1">
-                            <img src={img} alt="Cyfonii" />
+                            <img src={img} alt="limitless" />
                         </div>
 
                         <div className="banner-box" data-aos="fade-up" data-aos-duration="2000">
