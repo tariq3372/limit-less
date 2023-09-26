@@ -77,9 +77,9 @@ function Footer() {
                     <Link to="/contact">Contact</Link>
                   </li>
                 </ul> */}
-                <p style={{ margin: 0 }}>Copyright © 2023, LimitLess. Designed by MVP</p>
+                <p>Copyright © 2023, LimitLess. Designed by MVP</p>
               </div>
-              <ul className="list-social">
+              {/* <ul className="list-social">
                 <li>
                   <Link to="#">
                     <svg
@@ -152,7 +152,7 @@ function Footer() {
                     </svg>
                   </Link>
                 </li>
-              </ul>
+              </ul> */}
             </div>
           </div>
         </div>

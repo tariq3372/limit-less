@@ -16,8 +16,7 @@ function Banner(props) {
                                         to <span className="mb-5 s1 arlo_tm_animation_text_word" style={{ background: "linear-gradient(264.28deg, #0087e8 -38.2%, #0087e8 103.12%)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>Wellness</span> <br />
                                         Begins Here</h2>
                                     <p className="desc">Experience limitless well-being through our innovative Oral Dissolving Films (ODF) solutions, designed for ease and effectiveness.</p>
-
-                                    <Link  className="action-btn"><span>Get Connected</span></Link>
+                                    {/* <Link className="action-btn"><span>Get Connected</span></Link> */}
                                 </div>
                             </div>
                         </div>

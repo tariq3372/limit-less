@@ -1,12 +1,9 @@
 import { React, useEffect } from "react";
 import AOS from "aos";
 import { Route, Routes } from "react-router-dom";
-
 import routes from "./pages";
 import Page404 from "./pages/404";
 import Header from "./components/header/Header";
-import Home01 from "./pages/Home01";
-import SingleProduct from "./pages/SingleProduct";
 
 function App() {
   useEffect(() => {
